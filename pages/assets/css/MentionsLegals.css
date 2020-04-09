@@ -11,6 +11,8 @@ section {
 section .section__header {
   font-size: 3em;
   text-align: center;
+  background-color: transparent;
+  margin: 5%;
 }
 
 section h2 {
@@ -29,22 +31,22 @@ section p {
 }
 
 @media only screen and (max-width: 1024px) {
-  p {
+  section p {
     margin: 5%;
   }
 }
 
 @media only screen and (min-width: 2000px) {
-  .section__header {
+  section .section__header {
     font-size: 4em;
   }
-  h2 {
+  section h2 {
     font-size: 2.5em;
   }
-  .title--underlined {
+  section .title--underlined {
     font-size: 2.2em;
   }
-  p {
+  section p {
     font-size: 1.9em;
   }
 }
