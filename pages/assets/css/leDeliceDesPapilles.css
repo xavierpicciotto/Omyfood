@@ -1,0 +1,215 @@
+@import url(baseHeaderFooter.css);
+section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7%;
+}
+
+section .section__header {
+  font-size: 3.7em;
+  white-space: nowrap;
+  margin-bottom: 10%;
+}
+
+article {
+  width: 90%;
+  background-color: #e2e7f5;
+}
+
+article .article__header {
+  margin-top: 2%;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+article .article__header h2 {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background: -webkit-linear-gradient(-65deg, #2618fb, #00d2ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+article .article__menu_title {
+  width: 100%;
+  margin-bottom: 7%;
+  font-family: 'Kalam', cursive;
+  cursor: default;
+  white-space: nowrap;
+  font-size: 2.5em;
+  margin-top: 13%;
+  border-bottom: 10px solid transparent;
+  border-radius: 20px;
+  -webkit-transition: border-color 0.5s ease-out;
+  transition: border-color 0.5s ease-out;
+  text-align: center;
+}
+
+article .article__menu_title:hover {
+  border-color: blue;
+}
+
+article .article__menu_title span {
+  position: relative;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-radius: 90px;
+  top: 30px;
+  background-color: #e2e7f5;
+  z-index: 1;
+}
+
+article .article__menu_title--light:hover {
+  border-color: #0069ff;
+}
+
+article .article__menu_title--lighter:hover {
+  border-color: #0093ff;
+}
+
+article p {
+  font-family: 'Kalam', cursive;
+  font-size: 2.2em;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article p span {
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+}
+
+article .article__footer {
+  font-family: 'Devonshire', cursive;
+  font-size: 3.6em;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+article .article__footer i {
+  margin-right: 1%;
+  background: -webkit-linear-gradient(left, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  z-index: 2;
+}
+
+@media only screen and (max-width: 700px) {
+  section {
+    margin-bottom: 20%;
+  }
+  section .section__header {
+    font-size: 1.5em;
+  }
+  article {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+  article .article__header {
+    font-size: 4em;
+  }
+  article .article__menu_title {
+    font-size: 1.7em;
+    border-bottom: 5px solid;
+    border-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-animation: decoration 1.5s;
+            animation: decoration 1.5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  article .article__menu_title span {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 0;
+    top: 0;
+  }
+  article p {
+    font-size: 1.5em;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10%;
+  }
+  article p span {
+    margin-top: 10%;
+  }
+  article .article__footer {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .article__header h2 {
+    font-size: 1em;
+  }
+  footer h3 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  section .section__header {
+    font-size: 5em;
+  }
+  article .article__header {
+    font-size: 5.5em;
+  }
+  article .article__menu_title {
+    font-size: 4em;
+    border-bottom: 20px solid transparent;
+    border-radius: 40px;
+  }
+  article .article__menu_title span {
+    top: 60px;
+  }
+  article p {
+    font-size: 3.5em;
+  }
+  article .article__footer {
+    font-size: 5em;
+  }
+}
+
+@-webkit-keyframes decoration {
+  0% {
+    border-color: blue;
+  }
+  50% {
+    border-color: #0069ff;
+  }
+  100% {
+    border-color: #0093ff;
+  }
+}
+/*# sourceMappingURL=leDeliceDesPapilles.css.map */
