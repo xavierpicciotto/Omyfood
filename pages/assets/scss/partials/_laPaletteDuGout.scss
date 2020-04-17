@@ -1,0 +1,180 @@
+.section--laPaletteDuGout {
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 15%;
+
+    .section--laPaletteDuGout__header {
+        font-size: 3.7em;
+        white-space: nowrap;
+        margin-bottom: 10%;
+    }
+}
+
+.laPaletteDuGout {
+    width: 90%;
+    background-color: $laPaletteDuGout-background;
+
+    .laPaletteDuGout__header {
+        margin-top: 2%;
+        font-size: 4.5em;
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            background: -webkit-linear-gradient(-65deg, $laPaletteDuGout-primaire, $laPaletteDuGout-secondaire);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .laPaletteDuGout__menu_title {
+        width: 100%;
+        margin-bottom: 7%;
+        font-family: 'Kalam', cursive;
+        cursor: default;
+        white-space: nowrap;
+        font-size: 2.5em;
+        margin-top: 7%;
+        text-align: center;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: background-image 0.5s ease-in-out;
+
+        &:hover {
+            background-image: url(../img/barres2.png);
+        }
+
+        span {
+            position: relative;
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: $laPaletteDuGout-background;
+        }
+    }
+
+    p {
+        font-family: 'Kalam', cursive;
+        font-size: 2.2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+
+        span {
+            font-family: 'Kalam', cursive;
+            font-weight: bold;
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .section--laPaletteDuGout {
+        margin-bottom: 15%;
+
+        .section--laPaletteDuGout__header {
+            font-size: 1.9em;
+        }
+    }
+
+    .laPaletteDuGout {
+        width: 100%;
+        margin-bottom: 15%;
+
+        .laPaletteDuGout__header {
+            font-size: 2.6em;
+        }
+
+        .laPaletteDuGout__menu_title {
+            font-size: 2.2em;
+            width: auto;
+            margin-top: 20%;
+            text-align: center;
+
+            span {
+                margin-left: 0;
+                margin-right: 0;
+                top: 0;
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            margin: 10%;
+
+            span {
+                margin-top: 5%;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .laPaletteDuGout__menu_title {
+        width: auto;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 10px solid white;
+        background-image: none;
+        -webkit-animation: decoration_laPaletteDuGout 1.5s;
+        animation: decoration_laPaletteDuGout 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+
+        &:hover {
+            background-image: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+
+
+    .section--laPaletteDuGout {
+        .section--laPaletteDuGout__header {
+            font-size: 5em;
+        }
+    }
+
+    .laPaletteDuGout {
+        .laPaletteDuGout__header {
+            font-size: 7.5em;
+        }
+
+        .laPaletteDuGout__menu_title {
+            font-size: 4em;
+            border-bottom: 20px solid transparent;
+            border-radius: 40px;
+
+        }
+
+        p {
+            font-size: 3.5em;
+        }
+
+
+    }
+}
