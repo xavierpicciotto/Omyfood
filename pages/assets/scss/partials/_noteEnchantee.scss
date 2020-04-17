@@ -1,0 +1,185 @@
+.section--noteEnchantee {
+    margin-bottom: 7%;
+
+    .section--noteEnchantee__header {
+        font-size: 4.9em;
+    }
+}
+
+.noteEnchantee {
+    width: 90%;
+    background-color: #ffd4dc;
+
+    .noteEnchantee__header {
+        margin-top: 7%;
+        font-size: 2.9em;
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            font-family: 'Devonshire', cursive;
+        }
+
+        i {
+            font-size: 2.5em;
+            background: -webkit-linear-gradient(left, red, orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .noteEnchantee__menu_title {
+        width: 100%;
+        font-family: 'Kalam', cursive;
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 3.3em;
+        margin-top: 7%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+
+        &:hover hr {
+            opacity: 1;
+        }
+    }
+
+    hr {
+        width: 30%;
+        height: 10px;
+        border-radius: 50px;
+        margin-left: 5%;
+        margin-right: auto;
+        background-color: black;
+        border: none;
+        opacity: 0;
+        -webkit-transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, -webkit-transform 1s;
+        transition: opacity 1s, transform 1s;
+        transition: opacity 1s, transform 1s, -webkit-transform 1s;
+
+        &:nth-child(even) {
+            margin-right: 5%;
+            margin-left: auto;
+        }
+    }
+
+    p {
+        font-family: 'Kalam', cursive;
+        font-size: 2.2em;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+
+        span {
+            font-family: 'Kalam', cursive;
+            font-weight: bold;
+        }
+    }
+
+    .noteEnchantee__footer {
+        font-family: 'Devonshire', cursive;
+        font-size: 3.6em;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+        i {
+            margin-right: 1%;
+            background: -webkit-linear-gradient(left, red, orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section--noteEnchantee {
+        margin-bottom: 20%;
+
+        .section--noteEnchantee__header {
+            font-size: 2em;
+        }
+    }
+
+    .noteEnchantee {
+        width: 100%;
+
+        .noteEnchantee__header {
+            font-size: 2.2em;
+
+            i {
+                font-size: 2.2em;
+            }
+        }
+
+        .noteEnchantee__menu_title {
+            font-size: 2.5em;
+            text-align: center;
+            display: block;
+            -webkit-text-decoration: underline black;
+            text-decoration: underline black;
+            -webkit-animation: decoration_noteEnchantee 2s;
+            animation: decoration_noteEnchantee 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+        }
+
+        .noteEnchantee__footer {
+            font-size: 2em;
+        }
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 2100px) {
+
+    .section--noteEnchantee {
+        .section--noteEnchantee__header {
+            font-size: 5em;
+        }
+    }
+
+    .noteEnchantee {
+        .noteEnchantee__header {
+            font-size: 5.5em;
+        }
+
+        .noteEnchantee__menu_title {
+            font-size: 4em;
+        }
+
+        p {
+            font-size: 3.5em;
+        }
+
+        .noteEnchantee__footer {
+            font-size: 5em;
+        }
+    }
+
+}
