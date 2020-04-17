@@ -1,0 +1,58 @@
+.mentionsLegals {
+    font-size: larger;
+    font-family: sans-serif;
+    margin-bottom: 10%;
+    display: block;
+
+    .mentionsLegals__header {
+        font-size: 3em;
+        text-align: center;
+        background-color: transparent;
+        margin: 5%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        width: inherit;
+        margin-left: 2%;
+        background-color: burlywood;
+    }
+
+    .mentionsLegals__title--underlined {
+        font-size: 1.2em;
+        text-decoration: underline;
+    }
+
+    p {
+        margin: 2%;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .mentionsLegals {
+        p {
+            margin: 5%;
+        }
+    }
+
+}
+
+@media only screen and (min-width:2000px) {
+    .mentionsLegals {
+        .mentionsLegals__header {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        .mentionsLegals__title--underlined {
+            font-size: 2.2em;
+        }
+
+        p {
+            font-size: 1.9em;
+        }
+    }
+}
